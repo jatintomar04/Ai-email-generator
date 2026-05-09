@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api/email";
+const API_URL = "https://ai-email-generator-53ei.onrender.com";
 
 // generate email
 const generateEmail = async (formData, token) => {
