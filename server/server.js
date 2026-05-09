@@ -2,12 +2,15 @@ const express = require('express')
 const connectDB = require("./config/dbConfig")
 const cors = require("cors");
 require ('dotenv').config()
+const dns = require('node:dns');
 
 const app = express()
 const PORT = process.env.PORT || 8080;
 
 // DB CONNECTION 
 connectDB()
+
+dns.setDefaultResultOrder('ipv4first');
 
 app.use (express.json())
 app.use(express.urlencoded("extnded:true"))
