@@ -11,7 +11,8 @@ import LoginwithGmail from './pages/LoginwithGmail'
 import PrivateComponent from './components/privateComponent'
 import AllEmails from './pages/AllEmails'
 import GenerateEmail from './pages/GenerateEmail'
-import ScrollTop from './components/Scrolltop'
+import ScrollTop from './components/ScrollTop'
+
 
 
 
