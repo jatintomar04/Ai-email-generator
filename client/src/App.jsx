@@ -8,10 +8,10 @@ import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import VerifyotpPage from './pages/VerifyotpPage'
 import LoginwithGmail from './pages/LoginwithGmail'
-import GenerateEmail from './pages/GenrateEmail'
 import PrivateComponent from './components/privateComponent'
 import ScrollTop from './components/Scrolltop'
 import AllEmails from './pages/AllEmails'
+import GenerateEmail from './pages/GenerateEmail'
 
 
 
