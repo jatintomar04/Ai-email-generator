@@ -5,6 +5,7 @@ import { generateEmail } from '../features/email/emailSlice';
 import { toast } from 'react-toastify';
 import Loading from '../components/Loading';
 
+
 const GenerateEmail = () => {
   const { generatedEmail,singleEmail,isLoading, isError, isSuccess, message } = useSelector(state => state.email)
 
