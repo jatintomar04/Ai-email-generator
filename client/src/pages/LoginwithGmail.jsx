@@ -6,7 +6,7 @@ import { loginWithEmail } from '../features/auth/authSlice';
 import { useNavigate } from 'react-router-dom';
 
 const LoginwithGmail = () => {
-
+    
   const dispatch = useDispatch()
   const navigate =useNavigate()
   

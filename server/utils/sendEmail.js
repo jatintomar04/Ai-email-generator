@@ -2,6 +2,9 @@ const nodemailer = require("nodemailer");
 require("dotenv").config()
 
 const sendEmail = async (to, subject, text) => {
+
+   console.log("EMAIL:", process.env.EMAIL_USER);
+  console.log("PASSWORD EXISTS:", !!process.env.EMAIL_PASS);
   try {
     const transporter = nodemailer.createTransport({
         

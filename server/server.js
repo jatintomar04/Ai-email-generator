@@ -10,9 +10,9 @@ const PORT = process.env.PORT || 8080;
 connectDB()
 
 app.use (express.json())
-app.use(express.urlencoded())
+app.use(express.urlencoded({extnded:true}))
 app.use(cors({
-  origin: '*',
+  origin: 'ai-email-generator-seven-gamma.vercel.app',
   credentials: true
 }));
 
