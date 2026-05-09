@@ -9,9 +9,9 @@ import RegisterPage from './pages/RegisterPage'
 import VerifyotpPage from './pages/VerifyotpPage'
 import LoginwithGmail from './pages/LoginwithGmail'
 import PrivateComponent from './components/privateComponent'
-import ScrollTop from './components/Scrolltop'
 import AllEmails from './pages/AllEmails'
 import GenerateEmail from './pages/GenerateEmail'
+import ScrollTop from './components/Scrolltop'
 
 
 
