@@ -6,9 +6,9 @@ const sendEmail = async (to, subject, text) => {
     const transporter = nodemailer.createTransport({
         
       host: 'smtp.gmail.com',
-  port: 465, // 587 ki jagah 465 try karein (Secure Connection)
-  secure: true, 
-  auth: {
+      port: 465, // 587 ki jagah 465 try karein (Secure Connection)
+       secure: true, 
+       auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
   },
