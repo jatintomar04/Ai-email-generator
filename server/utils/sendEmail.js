@@ -1,32 +1,35 @@
 const nodemailer = require("nodemailer");
-require("dotenv").config()
+require("dotenv").config();
 
 const sendEmail = async (to, subject, text) => {
   try {
     const transporter = nodemailer.createTransport({
-        port: 465,
-
-      host: "smtp.gmail.comp",
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
-      secure :true
     });
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to : to,
-      subject : subject,
-      text :  text,
-      html : `<p>${text}</p>`
+      to: to,
+      subject: subject,
+      text: text,
+      html: `<p>${text}</p>`,
     };
 
-    await transporter.sendMail(mailOptions);
-    
+    const info = await transporter.sendMail(mailOptions);
+
+    console.log("Email Sent:", info.response);
+
+    return info;
 
   } catch (error) {
-    console.log("Email error:", error.message);
+    console.log("Email Error:", error.message);
+    throw error;
   }
 };
 
