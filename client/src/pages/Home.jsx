@@ -90,12 +90,23 @@ const Home = () => {
               <div className="text-xs text-zinc-500">Accuracy Rate</div>
             </div>
           </div>
-
-          {/* Screenshot placeholder */}
+                <h1 className='text-3xl text-blue-400'>Dashboard Preview</h1>
+          {/* video  */}
           <div className="relative rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900/30">
-            <div className="aspect-video bg-gradient-to-b from-zinc-800/20 to-transparent flex flex-col items-center justify-center gap-3">
-              <Code className="w-12 h-12 text-blue-500 opacity-40" />
-              <div className="text-zinc-500 font-medium">Dashboard Preview</div>
+            <div className="aspect-video bg-gradient-to-b from-zinc-800/20 to-transparent flex flex-col items-center justify-center ">
+            
+            
+
+                <video
+    className="w-full aspect-video object-cover"
+    autoPlay
+    muted
+    loop
+    
+  >
+    <source src="/video/Video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
             </div>
           </div>
         </div>
